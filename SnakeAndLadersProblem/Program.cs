@@ -11,9 +11,16 @@ namespace SnakeLadderProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to snake and ladder");
-            int playerposition = 0;
-            Console.WriteLine("singleplayer position is now starting from zero");
+            Console.WriteLine("welcome to the snake and ladder program!");
+            int PlayerPosition = 0;
+            Console.WriteLine("singleplayer position is now starting as zero");
+            int playerNumberOfRolls = 0;
+            Random random = new Random();
+
+            int playerDiceRoll = random.Next(1, 7);
+            playerNumberOfRolls++;
+
+            Console.WriteLine("the player rolled a dice is   " + playerDiceRoll);
         }
     }
 }
